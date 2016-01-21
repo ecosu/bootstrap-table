@@ -76,9 +76,9 @@
         <td>sort.bs.table</td>
         <td>name, order</td>
         <td>
-        Fires when user sort a column, the parameters contains: <br>
-        name: the sort column field name<br>
-        order: the sort column order.
+        当用户对列执行sort排序时候触发，参数包括：<br>
+        name：排序的列的filed名称，<br>
+        order：排序列的排序方式（asc或者desc）。
         </td>
     </tr>
     <tr>
@@ -86,9 +86,9 @@
         <td>check.bs.table</td>
         <td>row</td>
         <td>
-        Fires when user check a row, the parameters contains: <br>
-        row: the record corresponding to the clicked row.
-        $element: the DOM element checked.
+        当用户check一行的时候触发，参数包括： <br>
+        row: 与点击行关联的记录，<br>
+        $element: check的DOM对象。
         </td>
     </tr>
     <tr>
@@ -96,9 +96,9 @@
         <td>uncheck.bs.table</td>
         <td>row</td>
         <td>
-        Fires when user uncheck a row, the parameters contains: <br>
-        row: the record corresponding to the clicked row.
-        $element: the DOM element unchecked.
+        当用户uncheck一行时候触发， 参数包括： <br>
+        row: 与点击行关联的记录，<br>
+        $element: uncheck的DOM对象。
         </td>
     </tr>
     <tr>
@@ -106,8 +106,8 @@
         <td>check-all.bs.table</td>
         <td>rows</td>
         <td>
-        Fires when user check all rows, the parameters contains: <br>
-        rows: array of records corresponding to newly checked rows.
+       当用户check所有行的时候触发，参数包括： <br>
+        rows: 最新check行关联的记录。
         </td>
     </tr>
     <tr>
@@ -115,8 +115,8 @@
         <td>uncheck-all.bs.table</td>
         <td>rows</td>
         <td>
-        Fires when user uncheck all rows, the parameters contains: <br>
-        rows: array of records corresponding to previously checked rows.
+        当用户取消check所有行的时候触发，参数包括: <br>
+        rows: 之前check的行关联的数据记录。
         </td>
     </tr>
     <tr>
@@ -124,8 +124,8 @@
         <td>check-some.bs.table</td>
         <td>rows</td>
         <td>
-        Fires when user check some rows, the parameters contains: <br>
-        rows: array of records corresponding to previously checked rows.
+       当用户check一些行的时候触发，参数包括： <br>
+        rows:check行关联的数据记录。
         </td>
     </tr>
     <tr>
@@ -133,71 +133,70 @@
         <td>uncheck-some.bs.table</td>
         <td>rows</td>
         <td>
-        Fires when user uncheck some rows, the parameters contains: <br>
-        rows: array of records corresponding to previously checked rows.
+        当用户取消check一些行时候触发，参数包括： <br>
+        rows: 取消check行关联的数据记录。
         </td>
     </tr>
     <tr>
         <td>onLoadSuccess</td>
         <td>load-success.bs.table</td>
         <td>data</td>
-        <td>Fires when remote data is loaded
-            successfully.
+        <td>远程数据加载成功时候触发。
         </td>
     </tr>
     <tr>
         <td>onLoadError</td>
         <td>load-error.bs.table</td>
         <td>status</td>
-        <td>Fires when some errors occur to load remote data.</td>
+        <td>加载远程数据出错时候触发。</td>
     </tr>
     <tr>
         <td>onColumnSwitch</td>
         <td>column-switch.bs.table</td>
         <td>field, checked</td>
-        <td>Fires when switch the column visible.</td>
+        <td>执行切换列的可见性时候触发。</td>
     </tr>
     <tr>
         <td>onColumnSearch</td>
         <td>column-search.bs.table</td>
         <td>field, text</td>
-        <td>Fires when search by column.</td>
+        <td>执行按列查找时候触发。</td>
     </tr>
     <tr>
         <td>onPageChange</td>
         <td>page-change.bs.table</td>
         <td>number, size</td>
-        <td>Fires when change the page number or page size.</td>
+        <td>当pagesize或者pagenumber变更时候触发。</td>
     </tr>
     <tr>
         <td>onSearch</td>
         <td>search.bs.table</td>
         <td>text</td>
-        <td>Fires when search the table.</td>
+        <td>执行table的查找时候触发。</td>
     </tr>
     <tr>
         <td>onToggle</td>
         <td>toggle.bs.table</td>
         <td>cardView</td>
-        <td>Fires when toggle the view of table.</td>
+        <td>切换table视图（card view）时候触发。</td>
     </tr>
     <tr>
         <td>onPreBody</td>
         <td>pre-body.bs.table</td>
         <td>data</td>
-        <td>Fires before the table body is rendered</td>
+        <td>表格body渲染出来之前触发。</td>
     </tr>
     <tr>
         <td>onPostBody</td>
         <td>post-body.bs.table</td>
         <td>none</td>
-        <td>Fires after the table body is rendered and available in the DOM</td>
+        <td>当表格body渲染出来并且在DOM中可用时触发。</td>
     </tr>
     <tr>
        <td>onPostHeader</td>
        <td>post-header.bs.table</td>
        <td>none</td>
-       <td>Fires after the table header is rendered and availble in the DOM</td>
+       <td>当表格header渲染出来并且在DOM中可用时触发。</td>
     </tr>
     <tr>
         <td>onExpandRow</td>
@@ -215,7 +214,7 @@
        <td>onRefreshOptions</td>
        <td>refresh-options.bs.table</td>
        <td>options</td>
-       <td>Fires after refresh the options and before destroy and init the table</td>
+       <td>在刷新options项并且在table初始化完成和销毁之前触发</td>
     </tr>
     </tbody>
 </table>
