@@ -25,99 +25,98 @@ The column options is defined in `jQuery.fn.bootstrapTable.columnDefaults`.
         <td>data-radio</td>
         <td>Boolean</td>
         <td>false</td>
-        <td>True to show a radio. The radio column has fixed width.</td>
+        <td>设置为true时显示radio，带有radio的列宽度固定</td>
     </tr>
     <tr>
         <td>checkbox</td>
         <td>data-checkbox</td>
         <td>Boolean</td>
         <td>false</td>
-        <td>True to show a checkbox. The checkbox column has fixed width.</td>
+        <td>设置为true时候显示checkbox，带有checkbox的列宽度固定</td>
     </tr>
     <tr>
         <td>field</td>
         <td>data-field</td>
         <td>String</td>
         <td>undefined</td>
-        <td>The column field name.</td>
+        <td>列field属性</td>
     </tr>
     <tr>
         <td>title</td>
         <td>data-title</td>
         <td>String</td>
         <td>undefined</td>
-        <td>The column title text.</td>
+        <td>列标题文本</td>
     </tr>
     <tr>
         <td>titleTooltip</td>
         <td>data-title-tooltip</td>
         <td>String</td>
         <td>undefined</td>
-        <td>The column title tooltip text. This option also support the title HTML attribute</td>
+        <td>列标题tooltip文本，该项支持html属性</td>
     </tr>
     <tr>
         <td>class</td>
         <td>class / data-class</td>
         <td>String</td>
         <td>undefined</td>
-        <td>The column class name.</td>
+        <td>列的样式class名称</td>
     </tr>
     <tr>
         <td>rowspan</td>
         <td>rowspan / data-rowspan</td>
         <td>Number</td>
         <td>undefined</td>
-        <td>Indicate how many rows a cell should take up.</td>
+        <td>指定一个单元格包含的行数</td>
     </tr>
     <tr>
         <td>colspan</td>
         <td>colspan / data-colspan</td>
         <td>Number</td>
         <td>undefined</td>
-        <td>Indicate how many columns a cell should take up.</td>
+        <td>指定一个单元格包含的列数</td>
     </tr>
     <tr>
         <td>align</td>
         <td>data-align</td>
         <td>String</td>
         <td>undefined</td>
-        <td>Indicate how to align the column data. 'left', 'right', 'center' can be used.</td>
+        <td>单元格内容水平对齐方式，可用项包括'left', 'right', 'center'</td>
     </tr>
     <tr>
         <td>halign</td>
         <td>data-halign</td>
         <td>String</td>
         <td>undefined</td>
-        <td>Indicate how to align the table header. 'left', 'right', 'center' can be used.</td>
+        <td>表格header水平对齐方式，可用项包括'left', 'right', 'center'</td>
     </tr>
     <tr>
         <td>falign</td>
         <td>data-falign</td>
         <td>String</td>
         <td>undefined</td>
-        <td>Indicate how to align the table footer. 'left', 'right', 'center' can be used.</td>
+        <td>表格footer水平对齐方式，可用项包括'left', 'right', 'center'</td>
     </tr>
     <tr>
         <td>valign</td>
         <td>data-valign</td>
         <td>String</td>
         <td>undefined</td>
-        <td>Indicate how to align the cell data. 'top', 'middle', 'bottom' can be used.</td>
+        <td>单元格垂直对齐方式，可用想包括 'top', 'middle', 'bottom'</td>
     </tr>
     <tr>
         <td>width</td>
         <td>data-width</td>
         <td>Number {Pixels or Percentage}</td>
         <td>undefined</td>
-        <td>The width of column. If not defined, the width will auto expand to fit its contents. Also you can add '%' to your number and
-		the bootstrapTable will use the percentage unit, otherwise, you can add or no the 'px' to your number and then the bootstrapTable will use the pixels</td>
+        <td>列宽度，如果不设置则会根据内容自动调整，可以设置像素或者百分比</td>
     </tr>
     <tr>
         <td>sortable</td>
         <td>data-sortable</td>
         <td>Boolean</td>
         <td>false</td>
-        <td>True to allow the column can be sorted.
+        <td>设置为true时可允许列排序
         </td>
     </tr>
     <tr>
@@ -125,35 +124,35 @@ The column options is defined in `jQuery.fn.bootstrapTable.columnDefaults`.
         <td>data-order</td>
         <td>String</td>
         <td>'asc'</td>
-        <td>The default sort order, can only be 'asc' or 'desc'.</td>
+        <td>默认的排序方式,可以使用'asc'升序或者'desc'降序</td>
     </tr>
     <tr>
         <td>visible</td>
         <td>data-visible</td>
         <td>Boolean</td>
         <td>true</td>
-        <td>False to hide the columns item.</td>
+        <td>指定列是否可见</td>
     </tr>
     <tr>
         <td>cardVisible</td>
         <td>data-card-visible</td>
         <td>Boolean</td>
         <td>true</td>
-        <td>False to hide the columns item in card view state.</td>
+        <td>设置为false时可以使列在卡片视图（card view）隐藏</td>
     </tr>
 	<tr>
         <td>switchable</td>
         <td>data-switchable</td>
         <td>Boolean</td>
         <td>true</td>
-        <td>False to disable the switchable of columns item.</td>
+        <td>指定是否允许切换列显示方式</td>
     </tr>
     <tr>
         <td>clickToSelect</td>
         <td>data-click-to-select</td>
         <td>Boolean</td>
         <td>true</td>
-        <td>True to select checkbox or radiobox when the column is clicked.</td>
+        <td>指定是否允许在点击列的时候勾选checkbox或radio</td>
     </tr>
     <tr>
         <td>formatter</td>
