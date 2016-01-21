@@ -148,59 +148,62 @@
         <td>updateCell</td>
         <td>params</td>
         <td>
-        Update one cell, the params contains following properties: <br>
-        index: the row index. <br>
-        field: the field name.<br>
-        value: the new field value.
+        更新一个单元格，参数包括： <br>
+        index：行index， <br>
+        field: field名称，<br>
+        value: 新的field的value。
         </td>
     </tr>
     <tr>
         <td>refresh</td>
         <td>params</td>
-        <td>Refresh the remote server data, you can set <code>{silent: true}</code> to refresh the data silently, and set <code>{url: newUrl}</code> to change the url. To supply query params specific to this request, set <code>{query: {foo: 'bar'}}</code></td>
+        <td>刷新远程服务数据。<br>
+        如果只是刷新当前url的数据可以用<code>{silent: true}</code>，<br>
+        如果要改变数据url可以用<code>{url: newUrl}</code>，<br>
+        如果要给当前url传递参数可以用<code>{query: {foo: 'bar'}}</code>。
     </tr>
     <tr>
         <td>refreshOptions</td>
         <td>options</td>
-        <td>Refresh the options</td>
+        <td>刷新options。</td>
     </tr>
     <tr>
         <td>showLoading</td>
         <td>none</td>
-        <td>Show loading status.</td>
+        <td>显示加载状态。</td>
     </tr>
     <tr>
         <td>hideLoading</td>
         <td>none</td>
-        <td>Hide loading status.</td>
+        <td>隐藏加载状态。</td>
     </tr>
     <tr>
         <td>checkAll</td>
         <td>none</td>
-        <td>Check all current page rows.</td>
+        <td>check当前页的所有行。</td>
     </tr>
     <tr>
         <td>uncheckAll</td>
         <td>none</td>
-        <td>Uncheck all current page rows.</td>
+        <td>取消check当前页的所有行。</td>
     </tr>
     <tr>
         <td>check</td>
         <td>index</td>
-        <td>Check a row, the row index start with 0.</td>
+        <td>check一行，注意行的index是从0开始的。</td>
     </tr>
     <tr>
         <td>uncheck</td>
         <td>index</td>
-        <td>Uncheck a row, the row index start with 0.</td>
+        <td>uncheck一行，注意行的index是从0开始的。</td>
     </tr>
     <tr>
         <td>checkBy</td>
         <td>params</td>
         <td>
-        Check a row by array of values, the params contains:<br>
-        field: name of the field used to find records<br>
-        values: array of values for rows to check<br>
+       通过一组value值check行，参数包括：<br>
+        field：用于check行的filed名称，<br>
+        values：一组包含field值的数组，<br>
         Example: <br>
         $("#table").bootstrapTable("checkBy", {field:"field_name", values:["value1","value2","value3"]})
         </td>
@@ -229,17 +232,17 @@
     <tr>
         <td>destroy</td>
         <td>none</td>
-        <td>Destroy the bootstrap table.</td>
+        <td>销毁table。</td>
     </tr>
     <tr>
         <td>showColumn</td>
         <td>field</td>
-        <td>Show the specified column.</td>
+        <td>显示指定的列。</td>
     </tr>
     <tr>
         <td>hideColumn</td>
         <td>field</td>
-        <td>Hide the specified column.</td>
+        <td>隐藏指定的列。</td>
     </tr>
     <tr>
         <td>getHiddenColumns</td>
@@ -289,22 +292,22 @@
     <tr>
         <td>expandRow</td>
         <td>index</td>
-        <td>Expand the row that has the index passed by parameter if the detail view option is set to True.</td>
+        <td>在详细视图里面展开指定的行。</td>
     </tr>
     <tr>
         <td>collapseRow</td>
         <td>index</td>
-        <td>Collapse the row that has the index passed by parameter if the detail view option is set to True.</td>
+        <td>在详细视图折叠指定的行。</td>
     </tr>
     <tr>
         <td>expandAllRows</td>
         <td>is subtable</td>
-        <td>Expand all rows if the detail view option is set to True.</td>
+        <td>在详细视图展开所有行。</td>
     </tr>
     <tr>
         <td>collapseAllRows</td>
         <td>is subtable</td>
-        <td>Collapse all rows if the detail view option is set to True.</td>
+        <td>在详细视图折叠所有行。</td>
     </tr>
     </tbody>
 </table>
